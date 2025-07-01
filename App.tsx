@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { View } from 'react-native';
 import { io } from 'socket.io-client';
-import ChatScreen from './Src/Screens/ChatScreen';
+import ChatScreen from './Src/Screens/chatScreen';
 
 export default function App() {
   useEffect(() => {
