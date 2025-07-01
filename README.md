@@ -1,7 +1,11 @@
 
 # 📱 Assign
 
-A **React Native** project for chatting with **Socket.IO** integration,  
+A **React Native** project f
+
+https://github.com/user-attachments/assets/534ea6aa-14ec-49ce-9583-3d9343f1bdb3
+
+or chatting with **Socket.IO** integration,  
 modern navigation, and vector icons support.
 
 ---
