@@ -1,28 +1,24 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import React, { useEffect } from 'react';
+import { View } from 'react-native';
+import { io } from 'socket.io-client';
+import ChatScreen from './Src/Screens/ChatScreen';
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+export default function App() {
+  useEffect(() => {
+    const socket = io('http://192.168.1.61:3000'); 
+    socket.on('connect', () => {
+      console.log('Connected to Socket.io server');
+    });
 
-function App() {
-  const isDarkMode = useColorScheme() === 'dark';
+    return () => {
+      socket.disconnect();
+      console.log('Socket disconnected');
+    };
+  }, []);
 
   return (
-    <View style={styles.container}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <NewAppScreen templateFileName="App.tsx" />
+    <View style={{ flex: 1 }}>
+      <ChatScreen />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
-
-export default App;
