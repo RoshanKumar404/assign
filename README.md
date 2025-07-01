@@ -4,7 +4,8 @@
 A **React Native** project f
 
 https://github.com/user-attachments/assets/534ea6aa-14ec-49ce-9583-3d9343f1bdb3
-
+**server repo**
+https://github.com/RoshanKumar404/chatServer
 or chatting with **Socket.IO** integration,  
 modern navigation, and vector icons support.
 
