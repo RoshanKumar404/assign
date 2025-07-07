@@ -17,9 +17,9 @@ export default function ChatScreen() {
     const fetchMessages = async () => {
       try {
         const res = await fetch('https://qa.corider.in/assignment/chat?page=0');
-        const data = await res.json(); // Assuming res.json() now works and gives valid JSON
+        const data = await res.json();
 
-        // It's good practice to log the data to verify its structure
+        
         console.log("Fetched API Data:", data);
         if (!data || !Array.isArray(data.chats)) {
             console.error("API response does not contain a 'chats' array:", data);
@@ -33,8 +33,8 @@ export default function ChatScreen() {
           text: item.message,
           avatar: item.sender.image,
           senderId: item.sender.user_id,
-          // Use the 'self' parameter directly from item.sender to set isMe
-          isMe: item.sender.self, // <--- This is the correct change!
+         
+          isMe: item.sender.self, 
         }));
         setChatLog(apiMessages);
       } catch (err) {

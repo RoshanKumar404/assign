@@ -153,7 +153,7 @@ export  const chatScreenStyles = StyleSheet.create({
  
   chatListContent: {
     paddingVertical: 10,
-    paddingHorizontal: 10, // Add some horizontal padding
+    paddingHorizontal: 10, 
   },
   messageContainer: {
     maxWidth: '80%',

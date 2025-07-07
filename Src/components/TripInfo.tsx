@@ -21,17 +21,17 @@ const TripInfo = () => {
           style={styles.image}
         />
         <Image
-          source={{ uri: 'https://avatars.githubusercontent.com/u/140232541?v=4' }}
+          source={{ uri: 'https://images.unsplash.com/photo-1749476695941-e03f73d3c7e7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMnx8fGVufDB8fHx8fA%3D%3D' }}
           style={styles.image}
         />
       </View>
       <View style={styles.row}>
         <Image
-          source={{ uri: 'https://avatars.githubusercontent.com/u/140232541?v=4' }}
+          source={{ uri: 'https://images.unsplash.com/photo-1749497683197-ae96f3cb92f4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D' }}
           style={styles.image}
         />
         <Image
-          source={{ uri: 'https://avatars.githubusercontent.com/u/140232541?v=4' }}
+          source={{ uri: 'https://images.unsplash.com/photo-1742201587774-f44fe79556f9?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }}
           style={styles.image}
         />
       </View>

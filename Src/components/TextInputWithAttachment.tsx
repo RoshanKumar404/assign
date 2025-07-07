@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { View, TextInput, Text, TouchableOpacity, Platform } from 'react-native';
-import { chatScreenStyles } from '../Styles/chatScreenStyles'; // Import styles
+import { chatScreenStyles } from '../Styles/chatScreenStyles';
 import Icon  from 'react-native-vector-icons/Ionicons';
 import Entypo  from 'react-native-vector-icons/Entypo';
 //import Lucid  from 'react-native-vector-icons/Lucid';

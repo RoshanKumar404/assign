@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 const Header = () => {
   return (
     <View style={styles.headerContainer}>
-      {/* LEFT: Back arrow + Title */}
+      
       <View style={styles.leftContainer}>
         <TouchableOpacity style={styles.headerButton}>
           <Icon name="arrow-back-outline" size={30} color="black" />
@@ -14,7 +14,7 @@ const Header = () => {
         <Text style={styles.headerTitle}>Trip 1</Text>
       </View>
 
-      {/* RIGHT: Edit icon */}
+      
       <TouchableOpacity style={styles.headerButton}>
         <Icon name="create-outline" size={30} color="black" />
       </TouchableOpacity>
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   headerContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between', // puts left & right apart
+    justifyContent: 'space-between', 
     paddingHorizontal: 15,
     paddingVertical: 10,
     borderBottomWidth: 1,
