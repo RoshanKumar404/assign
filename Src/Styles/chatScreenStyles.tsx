@@ -6,7 +6,7 @@ const { width, height } = Dimensions.get('window');
 export  const chatScreenStyles = StyleSheet.create({
   fullScreenContainer: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#FAF9F4',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   },
   loaderContainer: {
@@ -89,12 +89,12 @@ export  const chatScreenStyles = StyleSheet.create({
   },
    moreOptionsDropdown: {
     position: 'absolute',
-    top: 50, // adjust as needed
-    right: 20, // adjust as needed
+    top: 50, 
+    right: 20, 
     backgroundColor: '#fff',
     borderRadius: 8,
     padding: 12,
-    elevation: 5, // for Android shadow
+    elevation: 5, 
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
@@ -148,10 +148,12 @@ export  const chatScreenStyles = StyleSheet.create({
     borderColor: '#fff',
   },
   // --- Chat List Styles ---
+
+  
+ 
   chatListContent: {
-    paddingHorizontal: 15,
     paddingVertical: 10,
-    justifyContent: 'flex-end',
+    paddingHorizontal: 10, // Add some horizontal padding
   },
   messageContainer: {
     maxWidth: '80%',
@@ -181,13 +183,13 @@ export  const chatScreenStyles = StyleSheet.create({
     lineHeight: 20,
   },
   myMessageBubble: {
-    backgroundColor: '#007AFF',
+    backgroundColor: '#1C63D5',
     color: '#fff',
     marginLeft: 'auto',
     borderBottomRightRadius: 2,
   },
   otherMessageBubble: {
-    backgroundColor: '#F0F0F0',
+    backgroundColor: '#FFFFFF',
     color: '#333',
     borderBottomLeftRadius: 2,
   },

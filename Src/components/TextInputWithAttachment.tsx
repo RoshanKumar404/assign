@@ -20,6 +20,8 @@ const TextInputWithAttachment = ({
           placeholderTextColor="#888"
           style={chatScreenStyles.input}
           multiline
+          keyboardAppearance='default'
+          keyboardType='email-address'
         />
         <TouchableOpacity
           style={chatScreenStyles.attachmentButton}
