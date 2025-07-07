@@ -1,44 +1,50 @@
-import React, { useState } from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import React from 'react';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import Octicons from 'react-native-vector-icons/Octicons'
-import { chatScreenStyles } from '../Styles/chatScreenStyles';
 
 const Header = () => {
-  const [Modalvisible, setModalvisible] = useState(false);
-
-  const toggler = () => {
-    setModalvisible(!Modalvisible);
-  };
-
   return (
-    <View style={chatScreenStyles.headerContainer}>
-      <TouchableOpacity style={chatScreenStyles.headerButton}>
+    <View style={styles.headerContainer}>
+      {/* LEFT: Back arrow + Title */}
+      <View style={styles.leftContainer}>
+        <TouchableOpacity style={styles.headerButton}>
           <Icon name="arrow-back-outline" size={30} color="black" />
-          {/* //<ion-icon name="arrow-back-outline"></ion-icon> */}
+        </TouchableOpacity>
+
+        <Text style={styles.headerTitle}>Trip 1</Text>
+      </View>
+
+      {/* RIGHT: Edit icon */}
+      <TouchableOpacity style={styles.headerButton}>
+        <Icon name="create-outline" size={30} color="black" />
       </TouchableOpacity>
-
-      <Text style={chatScreenStyles.headerTitle}>Trip 1</Text>
-
-      <TouchableOpacity style={chatScreenStyles.headerButton}>
-      <Icon name="create-outline" size={30} color="black" />
-      </TouchableOpacity>
-
-      <TouchableOpacity style={chatScreenStyles.headerButton} onPress={toggler}>
-         <Icon name='ellipsis-vertical-outline' size={26} color='black'/>
-      </TouchableOpacity>
-
-      {Modalvisible && (
-        <View style={chatScreenStyles.moreOptionsDropdown}>
-
-          <Text style={chatScreenStyles.dropdownItem}>Members</Text>
-
-          <Text style={chatScreenStyles.dropdownItem}>Share Number</Text>
-          <Text style={chatScreenStyles.dropdownItem}>Report</Text>
-        </View>
-      )}
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  headerContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between', // puts left & right apart
+    paddingHorizontal: 15,
+    paddingVertical: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: '#eee',
+    backgroundColor: '#fff',
+  },
+  leftContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  headerButton: {
+    padding: 5,
+  },
+  headerTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginLeft: 10,
+  },
+});
 
 export default Header;

@@ -42,22 +42,22 @@ export  const chatScreenStyles = StyleSheet.create({
     marginLeft: 10,
     marginRight: 10,
   },
-  moreOptionsDropdown: {
-  position: 'absolute',
-  top: 50, 
-  right: 10, 
-  backgroundColor: '#fff',
-  borderRadius: 6,
-  elevation: 5,
-  padding: 10,
-  zIndex: 999,
-},
+//   moreOptionsDropdown: {
+//   position: 'absolute',
+//   top: 50, 
+//   right: 10, 
+//   backgroundColor: '#fff',
+//   borderRadius: 6,
+//   elevation: 5,
+//   padding: 10,
+//   zIndex: 999,
+// },
 
-  dropdownItem: {
-    paddingVertical: 8,
-    fontSize: 16,
-    color: '#333',
-  },
+  // dropdownItem: {
+  //   paddingVertical: 8,
+  //   fontSize: 16,
+  //   color: '#333',
+  // },
   // --- Trip Info Styles ---
   tripInfoContainer: {
     paddingHorizontal: 15,
@@ -79,13 +79,40 @@ export  const chatScreenStyles = StyleSheet.create({
     marginRight: 10,
   },
   tripFromText: {
-    fontSize: 16,
+    fontSize: 1,
     fontWeight: 'bold',
     color: '#333',
   },
   tripToText: {
     fontSize: 14,
     color: '#666',
+  },
+   moreOptionsDropdown: {
+    position: 'absolute',
+    top: 50, // adjust as needed
+    right: 20, // adjust as needed
+    backgroundColor: '#fff',
+    borderRadius: 8,
+    padding: 12,
+    elevation: 5, // for Android shadow
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    zIndex: 999,
+  },
+  dropdownRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: 8,
+    borderBottomWidth: 1,
+    borderBottomColor: '#ddd',
+  },
+  dropdownItem: {
+    marginLeft: 8,
+    fontSize: 16,
+    paddingVertical: 8,
+    color: '#333',
   },
   moreOptionsButton: {
     padding: 5,
