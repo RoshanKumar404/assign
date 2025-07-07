@@ -201,7 +201,7 @@ export  const chatScreenStyles = StyleSheet.create({
     borderTopColor: '#eee',
     paddingVertical: 10,
     paddingHorizontal: 15,
-    backgroundColor: '#fff',
+    backgroundColor: '#FAF9F4',
     paddingBottom: Platform.OS === 'ios' ? 20 : 0,
   },
   textInputWrapper: {
@@ -210,10 +210,11 @@ export  const chatScreenStyles = StyleSheet.create({
     alignItems: 'center',
     borderWidth: 1,
     borderColor: '#ddd',
-    borderRadius: 25,
+    borderRadius: 15,
     paddingRight: 10,
-    backgroundColor: '#f9f9f9',
+    backgroundColor: '#FAF9F4',
     marginRight: 10,
+    marginBottom:24
   },
   input: {
     flex: 1,

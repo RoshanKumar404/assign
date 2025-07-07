@@ -2,13 +2,18 @@
 import React from 'react';
 import { View, TextInput, Text, TouchableOpacity, Platform } from 'react-native';
 import { chatScreenStyles } from '../Styles/chatScreenStyles'; // Import styles
+import Icon  from 'react-native-vector-icons/Ionicons';
+import Entypo  from 'react-native-vector-icons/Entypo';
+//import Lucid  from 'react-native-vector-icons/Lucid';
+
+
 
 const TextInputWithAttachment = ({
   message,
   onChangeText,
   onSendMessage,
   onAttachmentPress,
-  placeholder = "Type your message...", // Add a default placeholder
+  placeholder = "Type your message...", 
 }) => {
   return (
     <View style={chatScreenStyles.inputArea}>
@@ -27,15 +32,15 @@ const TextInputWithAttachment = ({
           style={chatScreenStyles.attachmentButton}
           onPress={onAttachmentPress}
         >
-          <Text style={chatScreenStyles.attachmentIcon}>📎
-            </Text> 
+         <Entypo name="attachment" size={25} color="black" />
         </TouchableOpacity>
-      </View>
-
-      <TouchableOpacity onPress={onSendMessage} style={chatScreenStyles.sendButton}>
-        <Text style={chatScreenStyles.sendButtonText}>➤</Text>
+        <TouchableOpacity onPress={onSendMessage} >
+       <Icon name="send-outline" size={30} color="black" />
  
       </TouchableOpacity>
+      </View>
+
+      
     </View>
   );
 };

@@ -1,4 +1,3 @@
-// components/ChatBubble.js
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 
@@ -10,7 +9,7 @@ const ChatBubble = ({ item }) => {
       styles.bubbleContainer,
       isMe ? styles.myMessageContainer : styles.otherMessageContainer,
     ]}>
-      {!isMe && ( // Only show avatar for messages from others
+      {!isMe && (
         <Image source={{ uri: avatar }} style={styles.avatar} />
       )}
       <View style={[
@@ -21,7 +20,7 @@ const ChatBubble = ({ item }) => {
           {text}
         </Text>
       </View>
-      {isMe && ( // Only show avatar for messages from me (if you want it on the right too)
+      {isMe && ( 
         <Image source={{ uri: avatar }} style={styles.avatar} />
       )}
     </View>
@@ -31,17 +30,17 @@ const ChatBubble = ({ item }) => {
 const styles = StyleSheet.create({
   bubbleContainer: {
     flexDirection: 'row',
-    alignItems: 'flex-end', // Align text to the bottom of the avatar if heights differ
+    alignItems: 'flex-end',
     marginVertical: 4,
-    maxWidth: '80%', // To prevent bubbles from taking full width
+    maxWidth: '80%',
   },
   myMessageContainer: {
-    alignSelf: 'flex-end', // Aligns the whole bubble to the right
-    marginLeft: 'auto', // Pushes it to the right
+    alignSelf: 'flex-end', 
+    marginLeft: 'auto', 
   },
   otherMessageContainer: {
-    alignSelf: 'flex-start', // Aligns the whole bubble to the left
-    marginRight: 'auto', // Pushes it to the left
+    alignSelf: 'flex-start',
+    marginRight: 'auto',
   },
   avatar: {
     width: 30,
@@ -53,21 +52,21 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 15,
     borderRadius: 20,
-    // Base styles for all bubbles
+   
   },
   myMessageBubble: {
-    backgroundColor: '#DCF8C6', // Light green for my messages
-    borderBottomRightRadius: 2, // A small tweak for chat bubble corner
+    backgroundColor: '#1C63D5', 
+    borderBottomRightRadius: 2, 
   },
   otherMessageBubble: {
-    backgroundColor: '#E5E5EA', // Light grey for other messages
-    borderBottomLeftRadius: 2, // A small tweak for chat bubble corner
+    backgroundColor: '#FFFFFF',
+    borderBottomLeftRadius: 2, 
   },
   myMessageText: {
-    color: '#000',
+    color: '#ffffff',
   },
   otherMessageText: {
-    color: '#000',
+    color: '#606060',
   },
 });
 
