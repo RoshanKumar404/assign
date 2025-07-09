@@ -6,6 +6,8 @@ const { width, height } = Dimensions.get('window');
 export  const chatScreenStyles = StyleSheet.create({
   fullScreenContainer: {
     flex: 1,
+    // width:375,
+    // height:812,
     backgroundColor: '#FAF9F4',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   },
@@ -212,6 +214,7 @@ export  const chatScreenStyles = StyleSheet.create({
     borderColor: '#ddd',
     borderRadius: 15,
     paddingRight: 10,
+    // paddingBottom:50,
     backgroundColor: '#FAF9F4',
     marginRight: 10,
     marginBottom:24
@@ -221,7 +224,7 @@ export  const chatScreenStyles = StyleSheet.create({
     minHeight: 45,
     maxHeight: 120,
     paddingHorizontal: 15,
-    paddingVertical: 10,
+    paddingBottom: 10,
     fontSize: 16,
     color: '#333',
   },
