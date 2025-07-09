@@ -14,13 +14,13 @@ const AttachmentOptionsModal = ({ visible, onClose, onCameraPress, onVideoPress,
     <View style={styles.bubbleContainer}>
       <View style={styles.bubble}>
         <TouchableOpacity onPress={onCameraPress}>
-          <Icon name="camera-outline" size={24} color="white" style={styles.icon} />
+          <Icon name="camera-outline" size={20} color="white" style={styles.icon} />
         </TouchableOpacity>
         <TouchableOpacity onPress={onVideoPress}>
-          <Icon name="videocam-outline" size={24} color="white" style={styles.icon} />
+          <Icon name="videocam-outline" size={20} color="white" style={styles.icon} />
         </TouchableOpacity>
         <TouchableOpacity onPress={onDocumentPress}>
-          <Icon name="document-text-outline" size={24} color="white" style={styles.icon} />
+          <Icon name="document-text-outline" size={20} color="white" style={styles.icon} />
         </TouchableOpacity>
       </View>
       <View style={styles.triangle} />

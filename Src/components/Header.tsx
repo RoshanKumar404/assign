@@ -8,7 +8,7 @@ const Header = () => {
       
       <View style={styles.leftContainer}>
         <TouchableOpacity style={styles.headerButton}>
-          <Icon name="arrow-back-outline" size={30} color="black" />
+          <Icon name="arrow-back-outline" size={20} color="black" />
         </TouchableOpacity>
 
         <Text style={styles.headerTitle}>Trip 1</Text>
@@ -16,7 +16,7 @@ const Header = () => {
 
       
       <TouchableOpacity style={styles.headerButton}>
-        <Icon name="create-outline" size={30} color="black" />
+        <Icon name="create-outline" size={20} color="black" />
       </TouchableOpacity>
     </View>
   );
@@ -41,8 +41,9 @@ const styles = StyleSheet.create({
     padding: 5,
   },
   headerTitle: {
-    fontSize: 20,
-    fontWeight: 'bold',
+    fontSize: 24,
+    fontFamily:'MulishBold',
+    fontWeight: 600,
     marginLeft: 10,
   },
 });

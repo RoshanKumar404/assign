@@ -61,15 +61,15 @@ const TripInfo = () => {
       {Modalvisible && (
         <View style={styles.moreOptionsDropdown}>
           <View style={styles.dropdownRow}>
-            <Icon name="people-outline" size={25} color="black" />
+            <Icon name="people-outline" size={20} color="black" />
             <Text style={styles.dropdownItem}>Members</Text>
           </View>
           <View style={styles.dropdownRow}>
-            <Icon name="call-outline" size={25} color="black" />
+            <Icon name="call-outline" size={20} color="black" />
             <Text style={styles.dropdownItem}>Share Number</Text>
           </View>
           <View style={styles.dropdownRow}>
-            <Octicons name="report" size={25} color="black" />
+            <Octicons name="report" size={20} color="black" />
             <Text style={styles.dropdownItem}> Report</Text>
           </View>
           {/* <Text style={styles.dropdownItem}>Share Number</Text>
@@ -108,9 +108,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   mainAvatar: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
+    width: 48,
+    height: 48,
+    borderRadius: 48,
     marginRight: 10,
   },
   tripFromText: {
@@ -124,11 +124,15 @@ const styles = StyleSheet.create({
   },
   moreOptionsDropdown: {
     position: 'absolute',
-    top: 50, 
-    right: 20, 
+    top: 70, 
+    left: 220,
+    width:170, 
     backgroundColor: '#fff',
     borderRadius: 8,
     padding: 12,
+    // paddingLeft:12,
+    // paddingTop:7,
+    // paddingBottom:7,
     elevation: 5, 
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
@@ -142,13 +146,17 @@ const styles = StyleSheet.create({
   dropdownRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingVertical: 8,
+    paddingRight: 12,
+    paddingLeft:12,
+    paddingTop:7,
+   paddingBottom:7,
     borderBottomWidth: 1,
     borderBottomColor: '#ddd',
   },
   dropdownItem: {
     marginLeft: 8,
-    fontSize: 16,
+    fontSize: 14,
+    fontFamily:'MulishSemiBold',
     paddingVertical: 8,
     color: '#333',
   },

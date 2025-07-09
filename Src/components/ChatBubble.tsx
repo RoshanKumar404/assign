@@ -30,7 +30,7 @@ const ChatBubble = ({ item }) => {
 const styles = StyleSheet.create({
   bubbleContainer: {
     flexDirection: 'row',
-    alignItems: 'flex-end',
+    alignItems: 'flex-start',
     marginVertical: 4,
     maxWidth: '80%',
   },
@@ -49,24 +49,38 @@ const styles = StyleSheet.create({
     marginHorizontal: 8,
   },
   messageBubble: {
-    paddingVertical: 10,
-    paddingHorizontal: 15,
-    borderRadius: 20,
+    // paddingVertical: 10,
+    // paddingHorizontal: 15,
+    // borderRadius: 20,
+    padding:8,
+    gap:16,
+    width:319,
+    height:70,
+    borderTopRightRadius:12,
+    borderBottomStartRadius:12,
+    //borderBottomRightRadius:12
+    
    
   },
   myMessageBubble: {
     backgroundColor: '#1C63D5', 
-    borderBottomRightRadius: 2, 
+    borderTopLeftRadius:12,
+    //borderBottomStartRadius:12,
+    //borderBottomRightRadius:12 
   },
   otherMessageBubble: {
     backgroundColor: '#FFFFFF',
-    borderBottomLeftRadius: 2, 
+    borderBottomRightRadius:12 
   },
   myMessageText: {
+    fontFamily:'MulishMedium',
     color: '#ffffff',
+    fontSize:14
   },
   otherMessageText: {
     color: '#606060',
+    fontFamily:'MulishMedium',
+    fontSize:14
   },
 });
 
